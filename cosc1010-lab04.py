@@ -1,8 +1,8 @@
-# Your Name Here
+# Michael Cook
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
+# 09/30/24
+# Lab 04 
+# Lab Section: 16
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -99,7 +99,10 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-
+print(f"The max temperature recorded is {max(max_temps)}")
+print(f"The min temperature recorded is {min(min_temps)}")
