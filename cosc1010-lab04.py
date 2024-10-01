@@ -3,7 +3,7 @@
 # 09/30/24
 # Lab 04 
 # Lab Section: 16
-# Sources, people worked with, help given to: 
+# Sources, people worked with, help given to: Google Gemini (2024, Sept 30). “can you combine 2 lists in one loop.” 
 # your
 # comments
 # here
@@ -99,10 +99,18 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
-
+sum_max = 0
+sum_min = 0
+for num1, num2 in zip(max_temps,min_temps):
+    sum_max += num1
+    num1 = sum_max/len(max_temps)
+    sum_min += num2
+    num2 = sum_min/len(min_temps)
+print (f"the average max temp is {num1}")
+print (f"the average min temp is {num2}")
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-print(f"The max temperature recorded is {max(max_temps)}")
-print(f"The min temperature recorded is {min(min_temps)}")
+print(f"max= {sorted(max_temps)[-1]}")
+print(f"min= {sorted(min_temps)[0]}")
