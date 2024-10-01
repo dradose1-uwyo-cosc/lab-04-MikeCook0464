@@ -3,10 +3,7 @@
 # 09/30/24
 # Lab 04 
 # Lab Section: 16
-# Sources, people worked with, help given to: Google Gemini (2024, Sept 30). “can you combine 2 lists in one loop.” 
-# your
-# comments
-# here
+
 
 
 
@@ -101,9 +98,11 @@ min_temps = [
 
 sum_max = 0
 sum_min = 0
-for num1, num2 in zip(max_temps,min_temps):
+for num1 in max_temps:
     sum_max += num1
     num1 = sum_max/len(max_temps)
+
+for num2 in min_temps:
     sum_min += num2
     num2 = sum_min/len(min_temps)
 print (f"the average max temp is {num1}")
